@@ -54,37 +54,74 @@ int main()
 			"(1) one way leads up a flight of stairs, our duo cant make out whats at the top but see a bright light.\n"
 			"(2) the other way is  to continue on down this dark corridor.\n"
 			" witch way should our heroes go?\n"
-			"[PLEASE SELECT EITHER NUMBER ONE OR TWO]\n"
+			"[PLEASE SELECT EITHER NUMBER 1 OR 2]\n"
 			;
 		cin >> choice;
 		//choice 1 go up the stairs get bound and crushed by tentacles in the walls
-		if (choice == 1);
+		if (choice != 1 && choice != 2)
+		{
+			cout << "could you please pick either Number 1 or 2\n";
+			cin >> choice;
+			if (choice != 1 && choice != 2)
+			cout << "Verry funny, stop gerrymandering and choose an option.\n";
+			cin >> choice;
+		}
+		if (choice == 1)
 		{
 			cout << "you go up the stairs and get  evicerated by vines and tendrills in the walls\n";
 			udead = true;
 		}
-		;
+		
 
 		//choice 2 skeleton fight
 		if (choice == 2)
+		{
 			cout << "[" << buddy << "] lets keep going down the halllway im getting some bad vibes from those stairs.\n\n"
-			"Our heroes march down the dark lavish corridor before entering a large dimley-lit room that has beautiful pinstriped suits and fedoras strewn over the floor.\n\n"
-			"[" << player << "] well this isnt strange in the slightest.\n\n"
-			<< player << " accidently kicks a fedora on the floor, revealing a skull...\n"
-			"wich then procedes to look at " << player << " indignently, and get up off the floor.\n"
-			"kickstarting a chain reaction of movement under all the other suits.\n\n"
-			"a skeleton dressed in a black and white suit aproches the duo brandishing a machette.\n"
-			"(dapper skelleton) we is the Gabbaghouls, for the crime of messing up lil jonny bones's hat you gotta die.\n\n"
-			"oh dear a fight is about to start. what will our dynamic-duo do?\n\n";
+				"Our heroes march down the dark lavish corridor before entering a large dimley-lit room that has beautiful pinstriped suits and fedoras strewn over the floor.\n\n"
+				"[" << player << "] well this isnt strange in the slightest.\n\n"
+				<< player << " accidently kicks a fedora on the floor, revealing a skull...\n"
+				"wich then procedes to look at " << player << " indignently, and get up off the floor.\n"
+				"kickstarting a chain reaction of movement under all the other suits.\n\n"
+				"a skeleton dressed in a black and white suit aproches the duo brandishing a machette.\n"
+				"(dapper skelleton) we is the Gabbaghouls, for the crime of messing up lil jonny bones's hat you gotta die.\n\n"
+				"oh dear a fight is about to start. what will our dynamic-duo do?\n\n";
+			cout << "[1] let " << buddy << " take charge and hack away at the skeletons \n"
+				"[2] Let " << player << " blow the skeletons to smithereens\n\n";
 
-		//tell player please pick either option 1 or 2 if it contiinues stop being clever smart-ass you can only pick 1 or 2
+			cin >> choice;
+
+		if (choice != 1 && choice != 2)
+		{
+		cout << "could you please pick either option 1 or 2\n";
+		cin >> choice;
+		if (choice != 1 && choice != 2)
+		cout << "Verry funny, stop gerrymandering and choose an option.\n";
+		cin >> choice;
+		}
+			if (choice == 1)
+			{
+			cout << "[" << buddy << "] hey " << player << " stand back i got this one.\n"
+			"BI-FROST!\n\n"
+			<< buddy << " Draws his sword  and slashes into open air creating a slit in the air that shows behind the Gabbaghouls.\n"
+			"[" << buddy << "] 'Lets dance, you Ja-boney ";
+			}
+			if (choice == 2)
+			{
+				cout << "[" << player << "]" << buddy << ". Hit the deck!!!\n"
+					"NECRO FLAME\n\n"
+					"" << player << " Channels  a chunk of her mana into a large  explosion of black and blue fire incinnerating the Gabbaghouls.\n"
+					"[" << player << "] Oh, I may have used a bit to much Mana for that.\n"
+					<< player << " Puts one of her hands to the nape of her neck with a sheepish smile\n";
+				}
+		}
+		//tell player please pick either option 1 or 2 if it continues stop being clever smart-ass you can only pick 1 or 2
 
 
 		// the afterlife ch1
-		if (udead == true)
+		if (udead = true)
 		{
-			cout << "------------------------------------------------------------------------------------------------------\n"
-				" this is a terrible place to end our story would you like to retry from the top?\n"
+			cout << "\n------------------------------------------------------------------------------------------------------\n"
+				" well this is a terrible place to end our story would you like to retry from the top?\n"
 				"[PLEAESE SELECT Y OR N TO EITHER CONTINUE OR END]\n";
 
 
