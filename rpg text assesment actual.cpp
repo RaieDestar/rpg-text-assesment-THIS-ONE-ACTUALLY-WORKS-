@@ -18,7 +18,7 @@ int main()
 	cout << "press ENTER to continue...";
 	cin.get();
 	cout << "------------------------------------------------------------------------------------------------------\n"
-		"\n Two Adventures have gone on a quest to doccument what is at the bottom of this otherworldly Dungeon.\n"
+		"\nTwo Adventures have gone on a quest to doccument what is at the bottom of this otherworldly Dungeon.\n"
 		" This Dungeon first appeard several months ago, over the remains of a burnt down Jazz club.\n"
 		" It seems every bright-eyed, and bushy tailed adventurer that's descended into it depths hasn't returned...\n"
 		" Despite this for some reason this daft, dynamic duo of Adventurers have decide to go in anyway.\n\n";
@@ -28,8 +28,8 @@ int main()
 		"[PLEASE ENTER THE FIRST ADVENTURERS NAME]\n"
 		"[:SHE IS VERY DEADPAN AND RUDE WITCH CAPABLE OF DARK AND PYROKENETIC MAGIC]\n";
 	cin >> player;
-	cout << "\n Ok, so our glass half-empty gal is called... " << player << ". Hmm, groovy.\n";
-	cout << " Now what is the name of our other Adventurer?\n\n"
+	cout << "\nOk, so our glass half-empty gal is called... " << player << ". Hmm, groovy.\n";
+	cout << "Now what is the name of our other Adventurer?\n\n"
 		" [PLEASE ENTER THE NAME OF THE SECOND ADVRENTURER]\n"
 		"[:HE IS A DASHING CHIPPER AND UNSERIOUS SWORD DANCER WITH HEALING AND TELEPORTATION MAGIC]\n";
 	cin >> buddy;
@@ -44,10 +44,10 @@ int main()
 
 
 		cout << " Now then lets pick up with our two Heroes " << player << " and " << buddy << ".\n"
-			" Who are currently wandering through the first floor of this dungeon and are, Bickering... how wonderfull.\n\n\n";
+			"Who are currently wandering through the first floor of this dungeon and are, Bickering... how wonderfull.\n\n\n";
 		cout << "------------------------------------------------------------------------------------------------------\n";
 		cout << "[" << player << "]" " Oh real smoove " << buddy << ".\n"
-			" You just HAD,to take most of the day to get ready and forget your Sleeping bag.\n\n"
+			"You just HAD,to take most of the day to get ready and forget your Sleeping bag.\n\n"
 			"[" << buddy << "]" " oh come on  " << player << ", have a heart. This only the third time this has happend.\n\n"
 			"[" << player << "]" " Like Hell im going to share with you. You snore WAY too loud.\n\n";
 		cout << "during there rather miffed wandering our heroes have come across a fork in the road\n"
@@ -68,7 +68,14 @@ int main()
 		}
 		if (choice == 1)
 		{
-			cout << "you go up the stairs and get  evicerated by vines and tendrills in the walls\n";
+			cout << "[" << player << "] lets go up the stairs it's a bit brighter that way.\n\n"
+				"Our heroes go up the stairs and into a tall well lit room\n"
+				"[" <<buddy<< "] isn't it a rule of adventuring that a well lit room that's not near the exit has something strong inside?\n\n"
+				"Before" << player << "can retort A loud Hiss draws the attention of the duo, and in less than asecond the situation escalates exponentially.\n"
+				"as they are bound in every witch dirrection by thick brass pneumatic tendrills.\n"
+				<< player << "attempts to muster up a spell soley using her voice but is gagged by a thin tendrill.\n"
+				"our heroes are then dragged into the celing never to be seen again.";
+
 			udead = true;
 		}
 		
@@ -83,7 +90,7 @@ int main()
 				"wich then procedes to look at " << player << " indignently, and get up off the floor.\n"
 				"kickstarting a chain reaction of movement under all the other suits.\n\n"
 				"a skeleton dressed in a black and white suit aproches the duo brandishing a machette.\n"
-				"(dapper skelleton) we is the Gabbaghouls, for the crime of messing up lil jonny bones's hat you gotta die.\n\n"
+				"(dapper skelleton) we is the Gabba-Ghouls, for the crime of messing up lil jonny bones's hat you gotta die.\n\n"
 				"oh dear a fight is about to start. what will our dynamic-duo do?\n\n";
 			cout << "[1] let " << buddy << " take charge and hack away at the skeletons \n"
 				"[2] Let " << player << " blow the skeletons to smithereens\n\n";
@@ -102,16 +109,16 @@ int main()
 			{
 			cout << "[" << buddy << "] hey " << player << " stand back i got this one.\n"
 			"BI-FROST!\n\n"
-			<< buddy << " Draws his sword  and slashes into open air creating a slit in the air that shows behind the Gabbaghouls.\n"
+			<< buddy << " Draws his sword  and slashes into open air creating a slit in the air that shows behind the Gabba-Ghouls.\n"
 			"[" << buddy << "] 'Lets dance, you Ja-boney ";
 			}
 			if (choice == 2)
 			{
 				cout << "[" << player << "]" << buddy << ". Hit the deck!!!\n"
 					"NECRO FLAME\n\n"
-					"" << player << " Channels  a chunk of her mana into a large  explosion of black and blue fire incinnerating the Gabbaghouls.\n"
+					"" << player << " Channels  a chunk of her mana into a large  explosion of black and blue fire incinnerating the Gabba-Ghouls.\n"
 					"[" << player << "] Oh, I may have used a bit to much Mana for that.\n"
-					<< player << " Puts one of her hands to the nape of her neck with a sheepish smile\n";
+					<< player << " Puts one of her hands to the nape of her neck with a sheepish smile.\n";
 				}
 		}
 		//tell player please pick either option 1 or 2 if it continues stop being clever smart-ass you can only pick 1 or 2
