@@ -16,9 +16,11 @@ int main()
 	//values    
 	::string player;
 	::string buddy;
+	::string summoner;
 	int choice;
 	int udead;
 	char retry;
+	
 	//start and exposition
 	system
 	cout << "Into .Cognis\n";
@@ -130,9 +132,9 @@ int main()
 				talking
 					cout << "(dapper skelleton) we is the Gabba-Ghouls, for the crime of messing up lil jonny bones's hat you gotta die.\n\n";
 				narrator
-			cout <<	"oh dear a fight is about to start. what will our dynamic-duo do?\n\n"
-			
-					"[1] let " << buddy << " take charge and hack away at the skeletons \n"
+					cout << "oh dear a fight is about to start. what will our dynamic-duo do?\n\n";
+			inputs
+			cout <<		"[1] let " << buddy << " take charge and hack away at the skeletons \n"
 			"[2] Let " << player << " blow the skeletons to smithereens\n\n";
 				system
 					cout <<
@@ -149,27 +151,56 @@ int main()
 		cout << "Verry funny, stop gerrymandering and choose an option.\n";
 		cin >> choice;
 		}
-			if (choice == 1)
-			{
+		if (choice == 1)
+		{
 			talking
-			cout << "[" << buddy << "] hey " << player << " stand back i got this one.\n"
-			"BI-FROST!\n\n";
+				cout << "[" << buddy << "] hey " << player << " stand back i got this one,\n"
+				"BI-FROST!\n\n";
 			narrator
 				cout << buddy << " Draws his sword  and slashes into open air creating a slit in the air that shows behind the Gabba-Ghouls.\n";
 			talking
-			cout << "[" << buddy << "] 'Lets dance, you Ja-boney ";
-			}
+				cout << "[" << buddy << "] Lets dance, you Ja-boneys!!!\n\n";
+			narrator
+				cout << buddy << " seemingly throws caution to the wind cutting down the skeletons in a seemingly reckless mannor.\n"
+				"however whenever a skeleton atempts to slash at hhim he simply mannifests a portal and vanishes from harms way.\n"
+				"only to re-appear again moments later and butcherhis attacker. this goes on for  a few minutes. \n"
+				<< buddy << " is clearley dragging out the fight until hes satisfied, but during this time no gabbaghoul could get within ten steps of " << player << ".\n\n";
+			talking
+				cout << "[" << buddy << "] i thought you guys might last a bit longer, but you were a pretty good appertizer.\n\n";
+			narrator
+				cout << " he turns to " << player << " and chuckles\n";
+			talking
+				cout << " sorry to keep you wating,heh.";
+		}
+
+			//let player do it (big boom)
 			if (choice == 2)
 			{
 				talking
 					cout << "[" << player << "]" << buddy << ". Hit the deck!!!\n"
-					"NECRO FLAME\n\n";
+					"NECRO FLAME!!!\n\n";
 				narrator
 					cout << player << " Channels  a chunk of her mana into a large  explosion of black and blue fire incinnerating the Gabba-Ghouls.\n"
 					"[" << player << "] Oh, I may have used a bit to much Mana for that.\n";
 				talking
 				cout << player << " Puts one of her hands to the nape of her neck with a sheepish smile.\n";
 				}
+		
+			// interlude a cozy camp (with a rather grouchy skull)
+			
+			//pipeworks lair and the soundless adventurers (4th member summoner mage)
+
+			//interlude you will look fablous and like it (player is put in a suit, buddy become a Delinquant, the linen maiden will have her way)
+			
+			//interlude  this sounds really funky
+
+			// the fight against  meistdokuro
+		
+		
+		
+		
+		
+		
 		}
 		//tell player please pick either option 1 or 2 if it continues stop being clever smart-ass you can only pick 1 or 2
 
