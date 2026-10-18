@@ -187,7 +187,11 @@ int main()
 				}
 		
 			// interlude a cozy camp (with a rather grouchy skull)
-			
+			narrator
+				cout << "After a moment of regaining their breath our duo are goint to leave when...";
+			talking
+				cout << "[" << buddy << "] Hey " << player << "would it be a good idea to bring one of these skulls back using your magic so it can navigate for us."
+
 			//pipeworks lair and the soundless adventurers (4th member summoner mage)
 
 			//interlude you will look fablous and like it (player is put in a suit, buddy become a Delinquant, the linen maiden will have her way)
