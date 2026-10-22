@@ -86,30 +86,14 @@ int main()
 			
 		inputs
 		cin >> choice;
-		//choice 1 Touchy tenatcles
-		//choice making logic		
-		if (choice != 1 && choice != 2)
-		{
-			//choice making logic		
-			if (choice != 1 && choice != 2)
-			{
-
-				narrator
-					cout << "could you please pick either option 1 or 2\n";
-				cin >> choice;
-				if (choice != 1 && choice != 2)
-					while (true)
-					{
-						cout << "Verry funny, stop gerrymandering and choose an option.\n";
-						cin >> choice;
-						if (choice == 1 || choice == 2)
-							break;
-					}
-			}
-		}
 		
-		if (choice == 1)
-		{
+		//choice making logic super new put this everywhere		
+		switch (choice){
+		
+		
+		case 1:
+		
+		
 			talking
 			cout << "[" << player << "] lets go up the stairs it's a bit brighter that way.\n\n";
 			narrator
@@ -123,12 +107,15 @@ int main()
 				"our heroes are then dragged into the celing never to be seen again.";
 
 			udead = true;
-		}
+					break;
+		
+		
+		
 		
 
 		//choice 2 skeleton fight
-		if (choice == 2)
-		{
+		case 2:
+		
 			talking
 				cout << "[" << buddy << "] lets keep going down the halllway im getting some bad vibes from those stairs.\n\n";
 			narrator
@@ -153,6 +140,8 @@ int main()
 				"[PLEASE SELECT EITHER NUMBER 1 OR 2]\n";
 			inputs
 				cin >> choice;
+			break;
+		}
 
 			//choice making logic		
 			if (choice != 1 && choice != 2)
@@ -288,7 +277,7 @@ int main()
 			// the fight against  meistdokuro
 			//tell player please pick either option 1 or 2 if it continues stop being clever smart-ass you can only pick 1 or 2
 
-		}
+	
 		// the afterlife 
 		if (udead == true)
 		{
